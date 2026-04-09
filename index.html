@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Escafeld Property Care</title>
-<meta name="description" content="Escafeld Property Care offers high-standard residential cleaning across Sheffield and surrounding areas.">
+<meta name="description" content="Escafeld Property Care offers high-standard residential cleaning across South Yorkshire.">
 
 <style>
 * {
@@ -42,8 +42,10 @@ header img {
 }
 
 .hero {
-  padding: 30px 16px 40px;
-  margin-top: -30px;
+  padding: 0 16px 44px;
+  margin-top: -90px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-box {
@@ -51,7 +53,7 @@ header img {
   margin: 0 auto;
   background: rgba(5, 18, 50, 0.9);
   border: 1px solid #c8a95b;
-  padding: 42px 24px;
+  padding: 44px 24px;
   border-radius: 20px;
   backdrop-filter: blur(6px);
   text-align: center;
@@ -61,21 +63,21 @@ header img {
 .hero h1 {
   font-family: Georgia, serif;
   font-size: 34px;
-  line-height: 1.2;
-  margin-bottom: 18px;
+  line-height: 1.18;
+  margin-bottom: 22px;
 }
 
 .hero p {
   color: #d8d8e6;
-  line-height: 1.8;
-  max-width: 520px;
+  line-height: 1.95;
+  max-width: 540px;
   margin: 0 auto;
-  font-size: 17px;
+  font-size: 18px;
   text-align: center;
 }
 
 .section {
-  padding: 30px 16px;
+  padding: 34px 16px;
 }
 
 .section h2 {
@@ -100,24 +102,25 @@ header img {
   background: rgba(5, 18, 50, 0.9);
   border: 1px solid #c8a95b;
   border-radius: 18px;
-  padding: 25px;
-  line-height: 1.7;
+  padding: 26px 24px;
+  line-height: 1.8;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .card p {
   text-align: left;
+  font-size: 17px;
+  margin-bottom: 14px;
 }
 
-.grid {
-  display: grid;
-  gap: 15px;
-  max-width: 900px;
-  margin: 0 auto;
+.card p:last-child {
+  margin-bottom: 0;
 }
 
-.grid-3 {
-  grid-template-columns: repeat(3, 1fr);
+.about-intro {
+  text-align: center !important;
+  max-width: 580px;
+  margin: 0 auto 20px !important;
 }
 
 .tick-list {
@@ -130,6 +133,7 @@ header img {
   padding-left: 34px;
   margin-bottom: 18px;
   line-height: 1.9;
+  font-size: 17px;
 }
 
 .tick-list li:last-child {
@@ -155,76 +159,204 @@ header img {
 .plain-list li {
   margin-bottom: 18px;
   line-height: 1.9;
+  font-size: 17px;
 }
 
 .plain-list li:last-child {
   margin-bottom: 0;
 }
 
+.bullet-list {
+  list-style: disc;
+  padding-left: 24px;
+}
+
+.bullet-list li {
+  margin-bottom: 14px;
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+.bullet-list li:last-child {
+  margin-bottom: 0;
+}
+
+.services-intro {
+  max-width: 760px;
+  margin: 0 auto 18px;
+  text-align: center;
+  color: #d8d8e6;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+/* IMAGE BLOCK */
+.feature-image {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.feature-image img {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* CONTACT */
+.contact-intro {
+  max-width: 500px;
+  margin: 0 auto 16px;
+  text-align: center;
+  color: #d8d8e6;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.contact-button-stack {
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-button-stack a {
+  display: block;
+  width: 100%;
+}
+
+.contact-button-stack img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-button-stack .phone-link,
+.contact-button-stack .email-link {
+  max-width: 460px;
+}
+
+.contact-button-stack .facebook-link {
+  max-width: 360px;
+}
+
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 24px 20px;
   color: #d7c8b1;
+  font-size: 15px;
 }
 
 @media (max-width: 900px) {
-  .grid-3 {
-    grid-template-columns: 1fr;
+  .hero {
+    margin-top: -70px;
   }
 
   .hero h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .section h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 
   .trust-title {
-    font-size: 1.45rem !important;
+    font-size: 1.5rem !important;
   }
 
   .card {
-    padding: 22px 20px;
+    padding: 24px 20px;
+  }
+
+  .card p,
+  .tick-list li,
+  .plain-list li,
+  .bullet-list li,
+  .services-intro,
+  .contact-intro {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    padding: 24px 16px 34px;
+    padding: 0 16px 38px;
+    margin-top: -55px;
   }
 
   .hero-box {
-    padding: 34px 20px;
+    padding: 36px 20px;
   }
 
   .hero h1 {
-    font-size: 26px;
+    font-size: 27px;
+    margin-bottom: 18px;
   }
 
   .hero p {
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.9;
   }
 
   .section {
-    padding: 26px 16px;
+    padding: 28px 16px;
   }
 
   .section h2 {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     margin-bottom: 20px;
   }
 
   .trust-title {
-    font-size: 1.28rem !important;
+    font-size: 1.32rem !important;
   }
 
   .card {
-    padding: 20px 18px;
+    padding: 22px 18px;
+  }
+
+  .card p,
+  .tick-list li,
+  .plain-list li,
+  .bullet-list li,
+  .services-intro {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+
+  .contact-intro {
+    max-width: 340px;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0 auto 14px;
+  }
+
+  .about-intro {
+    max-width: 300px;
   }
 
   .tick-list li {
     padding-left: 30px;
+  }
+
+  .bullet-list {
+    padding-left: 20px;
+  }
+
+  .contact-button-stack {
+    max-width: 100%;
+    gap: 14px;
+  }
+
+  .contact-button-stack .phone-link,
+  .contact-button-stack .email-link {
+    max-width: 88%;
+  }
+
+  .contact-button-stack .facebook-link {
+    max-width: 72%;
   }
 }
 </style>
@@ -248,15 +380,15 @@ footer {
     </p>
   </div>
 
-  <div style="max-width:900px;margin:30px auto 0;">
-    <img src="cleanhouse.png" alt="Clean living room" style="border-radius:20px;width:100%;border:1px solid rgba(255,255,255,0.15);box-shadow:0 10px 25px rgba(0,0,0,0.25);">
+  <div class="feature-image" style="margin-top:30px;">
+    <img src="cleanhouse.png" alt="Clean living room">
   </div>
 </section>
 
 <section id="about" class="section">
   <h2>About</h2>
   <div class="card">
-    <p><strong>A higher standard of residential cleaning, delivered by experienced professionals.</strong></p>
+    <p class="about-intro"><strong>A higher standard of residential cleaning, delivered by experienced professionals.</strong></p>
 
     <p>
       Escafeld Property Care is a newly established company built on years of hands-on experience.
@@ -265,7 +397,7 @@ footer {
 
     <p>
       We have worked in residential properties where consistency, presentation, and attention to detail matter.
-      That experience now shapes every clean we carry out across Sheffield and the surrounding areas.
+      That experience now shapes every clean we carry out across South Yorkshire.
     </p>
 
     <p>
@@ -294,18 +426,22 @@ footer {
 <section id="services" class="section">
   <h2>Services</h2>
 
-  <div style="max-width:900px;margin:0 auto 20px;">
-    <img src="kitchen.png" alt="Clean kitchen" style="border-radius:20px;width:100%;border:1px solid rgba(255,255,255,0.15);box-shadow:0 10px 25px rgba(0,0,0,0.25);">
+  <p class="services-intro">
+    Services designed around regular upkeep, deeper resets, and tailored home support.
+  </p>
+
+  <div class="card" style="max-width:760px;">
+    <ul class="bullet-list">
+      <li>Regular home cleaning</li>
+      <li>Deep cleaning for kitchens, bathrooms, and full-property resets</li>
+      <li>Move-in and reset cleans to bring properties back to standard</li>
+      <li>Post-event home reset after hosting or entertaining</li>
+      <li>Laundry finishing and ironing available by arrangement</li>
+    </ul>
   </div>
 
-  <div class="grid grid-3">
-    <div class="card">Regular residential cleaning to maintain a consistently high standard</div>
-    <div class="card">Deep cleaning for kitchens, bathrooms, and full-property resets</div>
-    <div class="card">Detail-focused cleaning where presentation matters most</div>
-    <div class="card">Move-in and reset cleans to bring properties back to standard</div>
-    <div class="card">Interior finishing touches that elevate presentation</div>
-    <div class="card">Tailored cleaning around property and client expectations</div>
-    <div class="card">Post-event home reset to restore order, freshness, and presentation after hosting or entertaining</div>
+  <div class="feature-image" style="margin-top:20px;">
+    <img src="services.png" alt="Cleaning services">
   </div>
 </section>
 
@@ -314,10 +450,11 @@ footer {
 
   <div class="card" style="max-width:700px;">
     <ul class="plain-list">
-      <li>Get in touch via email, phone, or message</li>
-      <li>Receive a clear, fast quote based on your requirements</li>
-      <li>We attend and complete the work to a high standard</li>
-      <li>Ongoing cleaning arranged if required</li>
+      <li>Get in touch via email, phone, or message with what you need</li>
+      <li>Receive a clear, no-obligation quote based on your requirements</li>
+      <li>Visits can be arranged as one-off, weekly, or fortnightly where suitable</li>
+      <li>The work is completed to a high standard with attention to detail throughout</li>
+      <li>Add-on tasks can be discussed and arranged where required</li>
     </ul>
   </div>
 </section>
@@ -327,26 +464,34 @@ footer {
   <div class="card">
     <ul class="tick-list">
       <li>Fully insured</li>
-      <li>DBS-checked team members</li>
+      <li>Fully vetted, DBS-checked team members</li>
       <li>Risk assessments available where required</li>
     </ul>
   </div>
 </section>
 
+<section class="section" style="padding-top:8px;padding-bottom:8px;">
+  <div class="feature-image">
+    <img src="cleaners.png" alt="Escafeld Property Care cleaning team">
+  </div>
+</section>
+
 <section id="contact" class="section">
-  <h2 style="margin-bottom:20px;">Contact</h2>
-  <div style="max-width:420px;margin:0 auto;background:rgba(5,18,50,0.9);border:1px solid #c8a95b;border-radius:20px;padding:28px 24px;box-shadow:0 10px 25px rgba(0,0,0,0.25);text-align:center;">
-    <div style="display:flex;justify-content:center;align-items:center;gap:28px;">
-      <a href="mailto:escafeldpropertycare@gmail.com">
-        <img src="email.png" alt="Email" style="width:72px;height:72px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(255,255,255,0.08));">
-      </a>
-      <a href="tel:07700123456">
-        <img src="phone.png" alt="Phone" style="width:72px;height:72px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(255,255,255,0.08));">
-      </a>
-      <a href="#">
-        <img src="facebook.png" alt="Facebook" style="width:72px;height:72px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(255,255,255,0.08));">
-      </a>
-    </div>
+  <h2 style="margin-bottom:14px;">Contact</h2>
+  <p class="contact-intro">
+    Get in touch to discuss your requirements and receive a free, no-obligation quote.
+  </p>
+
+  <div class="contact-button-stack">
+    <a href="tel:07700123456" class="phone-link">
+      <img src="phone.png" alt="Call Us">
+    </a>
+    <a href="mailto:escafeldpropertycare@gmail.com" class="email-link">
+      <img src="email.png" alt="Email Us">
+    </a>
+    <a href="https://www.facebook.com/share/1FzfjXKFzM/" class="facebook-link" target="_blank" rel="noopener noreferrer">
+      <img src="facebook.png" alt="Find us on Facebook">
+    </a>
   </div>
 </section>
 
