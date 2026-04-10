@@ -109,6 +109,10 @@ header img {
   font-size: 34px;
   line-height: 1.18;
   margin-bottom: 22px;
+  color: #d9bc74;
+  text-shadow:
+    0 1px 0 rgba(255,255,255,0.10),
+    0 2px 10px rgba(0,0,0,0.35);
 }
 
 .hero p {
@@ -130,6 +134,10 @@ header img {
   font-family: Georgia, serif;
   font-size: 2.2rem;
   max-width: 900px;
+  color: #d9bc74;
+  text-shadow:
+    0 1px 0 rgba(255,255,255,0.08),
+    0 2px 8px rgba(0,0,0,0.32);
 }
 
 .trust-title {
@@ -246,6 +254,61 @@ header img {
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
+.service-section-intro,
+.deep-clean-intro {
+  max-width: 760px;
+  margin: 0 auto 22px;
+  text-align: center;
+  color: #d8d8e6;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.service-grid,
+.deep-clean-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.service-box,
+.deep-clean-box {
+  background: rgba(5, 18, 50, 0.9);
+  border: 1px solid #c8a95b;
+  border-radius: 18px;
+  padding: 24px 22px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.service-box h3,
+.deep-clean-box h3 {
+  font-size: 1.25rem;
+  margin-bottom: 14px;
+  color: #d9bc74;
+  text-align: center;
+  font-family: Georgia, serif;
+  text-shadow:
+    0 1px 0 rgba(255,255,255,0.06),
+    0 2px 8px rgba(0,0,0,0.28);
+}
+
+.service-note,
+.deep-clean-note,
+.clean-difference-note {
+  max-width: 820px;
+  margin: 20px auto 0;
+  text-align: center;
+  color: #d8d8e6;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.clean-difference-note {
+  margin-top: 0;
+}
+
 .contact-intro {
   max-width: 500px;
   margin: 0 auto 16px;
@@ -329,8 +392,15 @@ footer {
   .plain-list li,
   .bullet-list li,
   .services-intro,
+  .service-section-intro,
+  .deep-clean-intro,
   .contact-intro {
     font-size: 16px;
+  }
+
+  .service-grid,
+  .deep-clean-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -375,9 +445,28 @@ footer {
   .tick-list li,
   .plain-list li,
   .bullet-list li,
-  .services-intro {
+  .services-intro,
+  .service-section-intro,
+  .deep-clean-intro {
     font-size: 15px;
     line-height: 1.85;
+  }
+
+  .service-box,
+  .deep-clean-box {
+    padding: 22px 18px;
+  }
+
+  .service-box h3,
+  .deep-clean-box h3 {
+    font-size: 1.12rem;
+  }
+
+  .service-note,
+  .deep-clean-note,
+  .clean-difference-note {
+    font-size: 14px;
+    line-height: 1.8;
   }
 
   .contact-intro {
@@ -502,6 +591,125 @@ footer {
   <div class="feature-image" style="margin-top:20px;">
     <img src="services.png" alt="Domestic cleaning services offered by Escafeld Property Care">
   </div>
+</section>
+
+<section id="regular-cleans" class="section">
+  <h2>Regular Cleans</h2>
+  <p class="service-section-intro">
+    Our regular cleans are designed to maintain a clean, presentable home on an ongoing basis and are ideal for weekly, fortnightly, or routine visits.
+  </p>
+
+  <div class="service-grid">
+    <div class="service-box">
+      <h3>What a Regular Clean Covers</h3>
+      <ul class="tick-list">
+        <li>General dusting and wiping of everyday surfaces</li>
+        <li>Kitchen worktops, visible fronts, sinks, and main touch points cleaned</li>
+        <li>Bathrooms and toilets cleaned and sanitised</li>
+        <li>Floors vacuumed and mopped where appropriate</li>
+        <li>Bins emptied and finishing touches completed</li>
+        <li>A consistent standard maintained from visit to visit</li>
+      </ul>
+    </div>
+
+    <div class="service-box">
+      <h3>Best Suited For</h3>
+      <ul class="tick-list">
+        <li>Homes that are already in decent overall condition</li>
+        <li>Clients wanting regular upkeep rather than a full reset</li>
+        <li>Weekly or fortnightly domestic cleaning visits</li>
+        <li>Maintaining presentation between busier periods</li>
+        <li>Reducing the time and effort needed to stay on top of the home</li>
+        <li>Keeping standards consistent over time</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="service-note">
+    Regular cleans are intended for maintenance and ongoing upkeep rather than tackling heavier build-up or neglected areas.
+  </p>
+</section>
+
+<section id="deep-cleans" class="section">
+  <h2>Deep Cleans</h2>
+  <p class="deep-clean-intro">
+    Our deep cleans are designed to cover the areas people notice most, with extra attention given to build-up, detail work, and full-property presentation.
+  </p>
+
+  <div class="deep-clean-grid">
+    <div class="deep-clean-box">
+      <h3>All Areas</h3>
+      <ul class="tick-list">
+        <li>High dusting to remove cobwebs and top-line build-up</li>
+        <li>Skirting boards, frames, handles, switches, and high-traffic touch points cleaned</li>
+        <li>General surfaces dusted and wiped throughout</li>
+        <li>Furniture fronts, visible marks, and presentation areas refreshed</li>
+        <li>Hard floors vacuumed and mopped where appropriate</li>
+        <li>Bins emptied, cleaned, and rubbish removed</li>
+      </ul>
+    </div>
+
+    <div class="deep-clean-box">
+      <h3>Kitchen & Utility</h3>
+      <ul class="tick-list">
+        <li>Worktops, cupboard fronts, and external appliance surfaces cleaned and degreased</li>
+        <li>Sinks, taps, plug areas, and surrounding surfaces cleaned and polished</li>
+        <li>Microwave cleaned inside and out</li>
+        <li>Visible marks, splashback areas, and everyday build-up removed</li>
+        <li>Skirting, edges, and accessible corners detailed</li>
+        <li>Floors thoroughly vacuumed and mopped</li>
+      </ul>
+    </div>
+
+    <div class="deep-clean-box">
+      <h3>Bathrooms & Toilets</h3>
+      <ul class="tick-list">
+        <li>Toilets cleaned, disinfected, and descaled where needed</li>
+        <li>Sinks, baths, showers, taps, and fittings cleaned and polished</li>
+        <li>Soap residue, water marks, and general bathroom build-up tackled</li>
+        <li>Mirrors, visible tile areas, and bathroom touch points cleaned</li>
+        <li>Shower screens, surrounds, and accessible tracks detailed</li>
+        <li>Floors vacuumed and mopped, with bins emptied and disinfected</li>
+      </ul>
+    </div>
+
+    <div class="deep-clean-box">
+      <h3>Optional Extras</h3>
+      <ul class="tick-list">
+        <li>Inside windows</li>
+        <li>Inside oven</li>
+        <li>Inside fridge</li>
+        <li>Move-in or reset preparation cleans</li>
+        <li>Post-event home reset</li>
+        <li>Laundry finishing and ironing by arrangement</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="deep-clean-note">
+    Exact tasks can vary depending on the size, condition, and requirements of the property. If there is something specific you want included, just ask when requesting your quote.
+  </p>
+</section>
+
+<section id="cleaning-differences" class="section" style="padding-top:8px;">
+  <h2>What’s the Difference?</h2>
+  <div class="card" style="max-width:820px;">
+    <p>
+      <strong>A regular clean is for upkeep.</strong> It is designed to maintain a home that is already in reasonable condition and keep standards consistent over time.
+    </p>
+
+    <p>
+      <strong>A deep clean is for a reset.</strong> It goes further into the detail, tackles heavier build-up, and is designed to bring the property back up to a higher standard before ongoing maintenance begins.
+    </p>
+
+    <p>
+      A deep clean may be recommended before regular visits start if a property has fallen behind, has visible build-up, has not been properly cleaned for some time, or needs bringing back up to standard after a busy period, move, tenancy, illness, or event.
+    </p>
+  </div>
+
+  <p class="clean-difference-note">
+    If you are unsure which service is right for your property, we can advise when you get in touch.
+  </p>
 </section>
 
 <section id="process" class="section">
