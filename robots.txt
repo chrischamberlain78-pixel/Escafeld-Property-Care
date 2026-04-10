@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://escafeldpropertycare.co.uk/sitemap.xml
