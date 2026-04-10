@@ -144,13 +144,6 @@ header img {
     0 2px 8px rgba(0,0,0,0.32);
 }
 
-.trust-title {
-  font-size: 1.8rem !important;
-  line-height: 1.2;
-  max-width: 100%;
-  white-space: nowrap;
-}
-
 .card {
   width: 100%;
   max-width: 760px;
@@ -171,12 +164,6 @@ header img {
 
 .card p:last-child {
   margin-bottom: 0;
-}
-
-.about-intro {
-  text-align: center !important;
-  max-width: 640px;
-  margin: 0 auto 20px !important;
 }
 
 .tick-list {
@@ -299,18 +286,13 @@ header img {
 }
 
 .service-note,
-.deep-clean-note,
-.clean-difference-note {
+.deep-clean-note {
   max-width: 820px;
   margin: 20px auto 0;
   text-align: center;
   color: #d8d8e6;
   font-size: 15px;
   line-height: 1.85;
-}
-
-.clean-difference-note {
-  margin-top: 0;
 }
 
 .contact-intro {
@@ -351,6 +333,40 @@ header img {
   max-width: 360px;
 }
 
+.trust-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(5, 18, 50, 0.9);
+  border: 1px solid #c8a95b;
+  border-radius: 20px;
+  padding: 28px 22px 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.trust-wrap h2 {
+  margin-bottom: 18px;
+}
+
+.trust-wrap .card {
+  max-width: 760px;
+  margin: 0 auto 14px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.trust-wrap .feature-image {
+  max-width: 760px;
+}
+
+.trust-wrap .feature-image img {
+  border-radius: 18px;
+  border: 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
 .bottom-branding-link {
   display: flex;
   justify-content: center;
@@ -381,10 +397,6 @@ footer {
 
   .section h2 {
     font-size: 2rem;
-  }
-
-  .trust-title {
-    font-size: 1.5rem !important;
   }
 
   .card {
@@ -438,10 +450,6 @@ footer {
     margin-bottom: 20px;
   }
 
-  .trust-title {
-    font-size: 1.32rem !important;
-  }
-
   .card {
     padding: 22px 18px;
   }
@@ -468,8 +476,7 @@ footer {
   }
 
   .service-note,
-  .deep-clean-note,
-  .clean-difference-note {
+  .deep-clean-note {
     font-size: 14px;
     line-height: 1.8;
   }
@@ -479,10 +486,6 @@ footer {
     font-size: 14px;
     line-height: 1.8;
     margin: 0 auto 14px;
-  }
-
-  .about-intro {
-    max-width: 300px;
   }
 
   .tick-list li {
@@ -505,6 +508,10 @@ footer {
 
   .contact-button-stack .facebook-link {
     max-width: 72%;
+  }
+
+  .trust-wrap {
+    padding: 24px 16px 16px;
   }
 
   .bottom-branding-link img {
@@ -530,35 +537,18 @@ footer {
       We offer regular home cleaning, deep cleans, reset cleans, and tailored domestic support for homes that need consistent upkeep or bringing back up to standard. Whether you need ongoing maintenance or a more thorough clean, our focus is always on quality, presentation, and dependable service.
     </p>
     <p>
+      Escafeld Property Care is a newly established business built on years of hands-on experience. The business may be new, but the standards, expectations, and work ethic behind it are not. We understand that inviting someone into your home is about trust as much as the cleaning itself, which is why every visit is approached with care, consistency, and attention to detail.
+    </p>
+    <p>
+      This is not a volume-based service. We focus on delivering a clean, fresh, well-presented result on every visit.
+    </p>
+    <p>
       Get in touch today for a free, no-obligation quote.
     </p>
   </div>
 
   <div class="feature-image" style="margin-top:30px;">
     <img src="cleanhouse.png" alt="Clean living room prepared to a high domestic cleaning standard">
-  </div>
-</section>
-
-<section id="about" class="section">
-  <h2>About</h2>
-  <div class="card">
-    <p class="about-intro"><strong>Escafeld Property Care is a newly established business built on years of hands-on experience.</strong></p>
-
-    <p>
-      The business may be new, but the standards, expectations, and work ethic behind it are not.
-    </p>
-
-    <p>
-      We understand that inviting someone into your home is about trust as much as the cleaning itself, which is why every visit is approached with care, consistency, and attention to detail.
-    </p>
-
-    <p>
-      We provide reliable home cleaning and domestic cleaning for residential properties where presentation, dependability, and respectful service matter.
-    </p>
-
-    <p>
-      <strong>This is not a volume-based service.</strong> We focus on delivering a clean, fresh, well-presented result on every visit.
-    </p>
   </div>
 </section>
 
@@ -573,8 +563,7 @@ footer {
     </ul>
 
     <p style="margin-top:18px;">
-      Escafeld Property Care is being built to offer a dependable domestic cleaning service and trusted house cleaner support in Sheffield and South Yorkshire from day one —
-      not through claims, but through the work delivered.
+      Escafeld Property Care is being built to offer a dependable domestic cleaning service and trusted house cleaner support in Sheffield and South Yorkshire from day one — not through claims, but through the work delivered.
     </p>
   </div>
 </section>
@@ -674,6 +663,9 @@ footer {
     </div>
 
     <div class="deep-clean-box">
+      <div class="feature-image" style="margin-bottom:18px;">
+        <img src="bathroom.png" alt="Very clean bathroom prepared to a high domestic cleaning standard">
+      </div>
       <h3>Bathrooms & Toilets</h3>
       <ul class="tick-list">
         <li>Toilets cleaned, disinfected, and descaled where needed</li>
@@ -703,27 +695,6 @@ footer {
   </p>
 </section>
 
-<section id="cleaning-differences" class="section" style="padding-top:8px;">
-  <h2>What’s the Difference?</h2>
-  <div class="card" style="max-width:820px;">
-    <p>
-      <strong>A regular clean is for upkeep.</strong> It is designed to maintain a home that is already in reasonable condition and keep standards consistent over time.
-    </p>
-
-    <p>
-      <strong>A deep clean is for a reset.</strong> It goes further into the detail, tackles heavier build-up, and is designed to bring the property back up to a higher standard before ongoing maintenance begins.
-    </p>
-
-    <p>
-      A deep clean may be recommended before regular visits start if a property has fallen behind, has visible build-up, has not been properly cleaned for some time, or needs bringing back up to standard after a busy period, move, tenancy, illness, or event.
-    </p>
-  </div>
-
-  <p class="clean-difference-note">
-    If you are unsure which service is right for your property, we can advise when you get in touch.
-  </p>
-</section>
-
 <section id="process" class="section">
   <h2>How It Works</h2>
 
@@ -739,19 +710,18 @@ footer {
 </section>
 
 <section id="trust" class="section">
-  <h2 class="trust-title">Trust & Reassurance</h2>
-  <div class="card">
-    <ul class="tick-list">
-      <li>Fully insured</li>
-      <li>Fully vetted, DBS-checked team members</li>
-      <li>Risk assessments available where required</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section" style="padding-top:8px;padding-bottom:8px;">
-  <div class="feature-image">
-    <img src="cleaners.png" alt="Escafeld Property Care domestic cleaning team">
+  <div class="trust-wrap">
+    <h2>Trust & Reassurance</h2>
+    <div class="card">
+      <ul class="tick-list">
+        <li>Fully insured</li>
+        <li>Fully vetted, DBS-checked team members</li>
+        <li>Risk assessments available where required</li>
+      </ul>
+    </div>
+    <div class="feature-image">
+      <img src="trust.png" alt="Escafeld Property Care trust graphic">
+    </div>
   </div>
 </section>
 
