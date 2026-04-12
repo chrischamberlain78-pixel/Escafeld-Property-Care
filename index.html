@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Domestic Cleaning in Sheffield & South Yorkshire | Escafeld Property Care</title>
-<meta name="description" content="Reliable, respectful domestic cleaning and home cleaning in Sheffield and South Yorkshire. Regular home cleaning, deep cleans, move-in and reset cleans, post-event cleaning, and ironing by arrangement.">
-<meta name="keywords" content="domestic cleaning Sheffield, domestic cleaning South Yorkshire, home cleaning Sheffield, house cleaning Sheffield, house cleaner Sheffield, deep cleaning Sheffield, regular home cleaning, Escafeld Property Care">
+<meta name="description" content="Reliable, respectful domestic cleaning and home cleaning in Sheffield and South Yorkshire. Regular home cleaning, deep cleans, carpet cleaning, and ironing by arrangement.">
+<meta name="keywords" content="domestic cleaning Sheffield, domestic cleaning South Yorkshire, home cleaning Sheffield, house cleaning Sheffield, house cleaner Sheffield, deep cleaning Sheffield, carpet cleaning Sheffield, regular home cleaning, Escafeld Property Care">
 <meta name="author" content="Escafeld Property Care">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://escafeldpropertycare.co.uk/">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Domestic Cleaning in Sheffield & South Yorkshire | Escafeld Property Care">
-<meta property="og:description" content="Reliable, respectful domestic cleaning and home cleaning in Sheffield and South Yorkshire. Regular home cleaning, deep cleans, move-in and reset cleans, post-event cleaning, and ironing by arrangement.">
+<meta property="og:description" content="Reliable, respectful domestic cleaning and home cleaning in Sheffield and South Yorkshire. Regular home cleaning, deep cleans, carpet cleaning, and ironing by arrangement.">
 <meta property="og:url" content="https://escafeldpropertycare.co.uk/">
 <meta property="og:site_name" content="Escafeld Property Care">
 <meta property="og:image" content="https://escafeldpropertycare.co.uk/logo.png">
@@ -32,7 +32,7 @@
   "url": "https://escafeldpropertycare.co.uk/",
   "image": "https://escafeldpropertycare.co.uk/logo.png",
   "logo": "https://escafeldpropertycare.co.uk/logo.png",
-  "description": "Reliable, respectful domestic cleaning and home cleaning in Sheffield and South Yorkshire. Regular home cleaning, deep cleans, move-in and reset cleans, post-event home resets, and laundry finishing and ironing by arrangement.",
+  "description": "Reliable, respectful domestic cleaning and home cleaning in Sheffield and South Yorkshire. Regular home cleaning, deep cleans, carpet cleaning, and laundry finishing and ironing by arrangement.",
   "telephone": "+44 7869 751928",
   "email": "info@escafeldpropertycare.co.uk",
   "areaServed": [
@@ -90,6 +90,99 @@ header img {
   display: block;
 }
 
+/* HAMBURGER MENU */
+.menu-wrap {
+  position: fixed;
+  top: 268px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 16px;
+  z-index: 99999;
+  pointer-events: none;
+}
+
+.menu-wrap > * {
+  pointer-events: auto;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-button {
+  width: 58px;
+  height: 58px;
+  margin-right: 0;
+  border-radius: 16px;
+  border: 1px solid #c8a95b;
+  background: #06205f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 4px 0 #021022,
+    0 10px 20px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.10),
+    inset 0 -1px 0 rgba(0,0,0,0.35);
+  cursor: pointer;
+}
+
+.menu-button svg {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
+.menu-button .hamburger-svg {
+  transition: transform 0.25s ease;
+}
+
+.menu-toggle:checked + .menu-button .hamburger-svg {
+  transform: rotate(90deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 72px;
+  right: 0;
+  min-width: 220px;
+  background: rgba(5, 18, 50, 0.97);
+  border: 1px solid #c8a95b;
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.menu-toggle:checked ~ .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 14px;
+  margin: 6px 0;
+  color: #ffffff;
+  background: linear-gradient(180deg, #06184d 0%, #041238 55%, #020b26 100%);
+  border: 1px solid #c8a95b;
+  border-radius: 999px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow:
+    0 3px 0 #021022,
+    0 7px 14px rgba(0,0,0,0.28),
+    inset 0 1px 0 rgba(255,255,255,0.16),
+    inset 0 -1px 0 rgba(0,0,0,0.28);
+  text-shadow: 0 1px 1px rgba(0,0,0,0.45);
+}
+
 .hero {
   position: relative;
   z-index: 6;
@@ -134,6 +227,7 @@ header img {
 
 .section {
   padding: 34px 16px;
+  scroll-margin-top: 88px;
 }
 
 .section h2 {
@@ -391,6 +485,21 @@ footer {
 }
 
 @media (max-width: 900px) {
+  .menu-wrap {
+    top: 272px;
+    padding-right: 16px;
+  }
+
+  .menu-button {
+    width: 54px;
+    height: 54px;
+  }
+
+  .menu-button svg {
+    width: 24px;
+    height: 24px;
+  }
+
   .hero {
     padding-top: 32px;
   }
@@ -426,6 +535,33 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .menu-wrap {
+    top: 272px;
+    padding-right: 16px;
+  }
+
+  .menu-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+  }
+
+  .menu-button svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .dropdown-menu {
+    min-width: 180px;
+    padding: 8px;
+    right: 0;
+  }
+
+  .dropdown-menu a {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
   .hero {
     padding: 24px 16px 38px;
   }
@@ -446,6 +582,7 @@ footer {
 
   .section {
     padding: 28px 16px;
+    scroll-margin-top: 76px;
   }
 
   .section h2 {
@@ -525,6 +662,23 @@ footer {
 </head>
 
 <body>
+
+<div class="menu-wrap">
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="menu-button" aria-label="Open menu">
+    <svg class="hamburger-svg" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="5" width="18" height="2.6" rx="1.3" fill="#ffffff"></rect>
+      <rect x="3" y="10.7" width="18" height="2.6" rx="1.3" fill="#ffffff"></rect>
+      <rect x="3" y="16.4" width="18" height="2.6" rx="1.3" fill="#ffffff"></rect>
+    </svg>
+  </label>
+  <nav class="dropdown-menu" aria-label="Quick navigation">
+    <a href="#services">Services</a>
+    <a href="#regular-cleans">Regular Cleans</a>
+    <a href="#deep-cleans">Deep Cleans</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
 
 <header>
   <img src="logo.png" alt="Escafeld Property Care logo">
@@ -752,6 +906,14 @@ footer {
 <a href="https://simplesitestudio.design" class="bottom-branding-link" target="_blank" rel="noopener noreferrer">
   <img src="simplesitestudio.png" alt="SimpleSiteStudio">
 </a>
+
+<script>
+document.querySelectorAll('.dropdown-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('menu-toggle').checked = false;
+  });
+});
+</script>
 
 </body>
 </html>
