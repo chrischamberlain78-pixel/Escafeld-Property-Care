@@ -33,7 +33,7 @@
   "image": "https://escafeldpropertycare.co.uk/logo.png",
   "logo": "https://escafeldpropertycare.co.uk/logo.png",
   "description": "Reliable domestic cleaning, deep cleaning, carpet cleaning, end of tenancy cleaning, and home cleaning in Sheffield and South Yorkshire. Regular home cleaning, EOT cleans, and laundry and ironing services by arrangement.",
-  "telephone": "+44 7869 751928",
+  "telephone": "+44 7732 813072",
   "email": "info@escafeldpropertycare.co.uk",
   "areaServed": [
     {
@@ -447,6 +447,79 @@ header img {
   font-weight: 700;
 }
 
+.contact-form {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto 28px;
+  background: rgba(5, 18, 50, 0.9);
+  border: 1px solid #c8a95b;
+  border-radius: 18px;
+  padding: 24px 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.contact-form h3 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #d9bc74;
+  font-family: Georgia, serif;
+  font-size: 1.35rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 14px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(200,169,91,0.75);
+  background: #ffffff;
+  color: #111111;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #d9bc74;
+  box-shadow: 0 0 0 3px rgba(217,188,116,0.22);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 15px 18px;
+  border: 1px solid #c8a95b;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #0b2e83 0%, #06184d 55%, #020b26 100%);
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow:
+    0 4px 0 #021022,
+    0 10px 20px rgba(0,0,0,0.32),
+    inset 0 1px 0 rgba(255,255,255,0.16),
+    inset 0 -1px 0 rgba(0,0,0,0.28);
+  text-shadow: 0 1px 1px rgba(0,0,0,0.45);
+}
+
+.contact-form button:active {
+  transform: translateY(2px);
+  box-shadow:
+    0 2px 0 #021022,
+    0 7px 14px rgba(0,0,0,0.28),
+    inset 0 1px 0 rgba(255,255,255,0.16),
+    inset 0 -1px 0 rgba(0,0,0,0.28);
+}
+
 .contact-button-stack {
   max-width: 520px;
   margin: 0 auto;
@@ -689,6 +762,26 @@ footer {
     font-size: 16px;
     line-height: 1.7;
     margin: 0 auto 18px;
+  }
+
+  .contact-form {
+    padding: 22px 16px;
+    margin-bottom: 24px;
+  }
+
+  .contact-form h3 {
+    font-size: 1.18rem;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 15px;
+    padding: 13px 12px;
+  }
+
+  .contact-form button {
+    font-size: 16px;
   }
 
   .tick-list li {
@@ -1054,13 +1147,37 @@ footer {
     Get in touch to discuss your requirements and receive a free, no-obligation quote.
   </p>
 
+  <form action="https://formspree.io/f/xpqbzrvl" method="POST" class="contact-form">
+    <h3>Send an Enquiry</h3>
+
+    <input type="text" name="name" placeholder="Your name" required>
+
+    <input type="tel" name="phone" placeholder="Your phone number" required>
+
+    <input type="email" name="email" placeholder="Your email address" required>
+
+    <select name="service" required>
+      <option value="">What service do you need?</option>
+      <option value="Regular home cleaning">Regular home cleaning</option>
+      <option value="Deep clean">Deep clean</option>
+      <option value="End of tenancy clean">End of tenancy clean</option>
+      <option value="Carpet cleaning">Carpet cleaning</option>
+      <option value="Move-in / move-out clean">Move-in / move-out clean</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <textarea name="message" placeholder="Tell us what you need" required></textarea>
+
+    <button type="submit">Send Enquiry</button>
+  </form>
+
   <p class="contact-click-note">
-    Click below to call, email, or visit our Facebook page.
+    Or tap one of the buttons below to call, email, or visit our Facebook page.
   </p>
 
   <div class="contact-button-stack">
-    <a href="tel:07869751928" class="phone-link" title="Call 07869751928">
-      <img src="phone.png" alt="Call 07869751928">
+    <a href="tel:07732813072" class="phone-link" title="Call 07732 813072">
+      <img src="phone.png" alt="Call 07732 813072">
     </a>
     <a href="mailto:info@escafeldpropertycare.co.uk" class="email-link" title="Email info@escafeldpropertycare.co.uk">
       <img src="email.png" alt="Email info@escafeldpropertycare.co.uk">
