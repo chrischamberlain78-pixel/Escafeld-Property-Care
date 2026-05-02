@@ -548,6 +548,22 @@ header img {
   max-width: 360px;
 }
 
+.contact-top-button {
+  max-width: 460px;
+  margin: 0 auto 22px;
+}
+
+.contact-top-button a {
+  display: block;
+  width: 100%;
+}
+
+.contact-top-button img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .trust-wrap {
   max-width: 900px;
   margin: 0 auto;
@@ -796,12 +812,13 @@ footer {
     gap: 14px;
   }
 
-  .contact-button-stack .phone-link {
-    max-width: 88%;
-  }
-
   .contact-button-stack .facebook-link {
     max-width: 72%;
+  }
+
+  .contact-top-button {
+    max-width: 88%;
+    margin: 0 auto 20px;
   }
 
   .trust-wrap {
@@ -1141,6 +1158,12 @@ footer {
 <section id="contact" class="section">
   <h2 style="margin-bottom:14px;">Contact</h2>
 
+  <div class="contact-top-button">
+    <a href="tel:07869751928" class="phone-link" title="Call 07869 751928">
+      <img src="phone.png" alt="Call 07869 751928">
+    </a>
+  </div>
+
   <p class="contact-intro">
     Get in touch to discuss your requirements and receive a free, no-obligation quote.
   </p>
@@ -1170,13 +1193,10 @@ footer {
   </form>
 
   <p class="contact-click-note">
-    Or tap one of the buttons below to call or visit our Facebook page.
+    Or tap the button below to visit our Facebook page.
   </p>
 
   <div class="contact-button-stack">
-    <a href="tel:07732813072" class="phone-link" title="Call 07732 813072">
-      <img src="phone.png" alt="Call 07732 813072">
-    </a>
     <a href="https://www.facebook.com/share/1FzfjXKFzM/" class="facebook-link" target="_blank" rel="noopener noreferrer">
       <img src="facebook.png" alt="Find us on Facebook">
     </a>
