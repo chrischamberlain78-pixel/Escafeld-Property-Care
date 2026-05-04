@@ -157,9 +157,6 @@ header img {
   transform: translateY(-8px);
   pointer-events: none;
   transition: opacity 0.2s ease, transform 0.2s ease;
-  max-height: calc(100vh - 270px);
-  overflow-y: auto;
-  scrollbar-width: thin;
 }
 
 .menu-toggle:checked ~ .dropdown-menu {
@@ -707,20 +704,18 @@ footer {
 }
 
 @media (min-width: 700px) and (max-height: 700px) {
-  .menu-wrap {
-    top: 110px;
-  }
-
   .dropdown-menu {
-    top: 62px;
-    max-height: calc(100vh - 190px);
-    overflow-y: auto;
+    top: 64px;
+    max-height: none;
+    overflow-y: visible;
+    padding: 8px;
   }
 
   .dropdown-menu a {
-    padding: 9px 12px;
-    margin: 5px 0;
+    padding: 8px 12px;
+    margin: 4px 0;
     font-size: 13px;
+    line-height: 1.2;
   }
 }
 
