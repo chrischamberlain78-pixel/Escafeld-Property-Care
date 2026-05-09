@@ -413,6 +413,52 @@ header img {
   text-transform: uppercase;
 }
 
+.before-after-wrap {
+  max-width: 720px;
+  margin: 22px auto 0;
+  background: rgba(5, 18, 50, 0.9);
+  border: 1px solid #c8a95b;
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.before-after-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.before-after-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.before-after-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.before-after-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(5, 18, 50, 0.92);
+  color: #d9bc74;
+  border: 1px solid #c8a95b;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
 .price-guide-title {
   text-align: center;
   color: #d9bc74;
@@ -830,6 +876,27 @@ footer {
     font-size: 1rem;
   }
 
+  .before-after-wrap {
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 18px;
+  }
+
+  .before-after-grid {
+    gap: 8px;
+  }
+
+  .before-after-item {
+    border-radius: 12px;
+  }
+
+  .before-after-label {
+    top: 6px;
+    left: 6px;
+    font-size: 9px;
+    padding: 4px 8px;
+  }
+
   .price-guide-title {
     font-size: 1.18rem;
   }
@@ -1098,6 +1165,20 @@ footer {
         <li>Extraction cleaning to remove suspended soil, moisture, and residue</li>
         <li>Extra drying passes carried out to help reduce drying time where possible</li>
       </ul>
+    </div>
+  </div>
+
+  <div class="before-after-wrap">
+    <div class="before-after-grid">
+      <div class="before-after-item">
+        <span class="before-after-label">Before</span>
+        <img src="before.jpg" alt="Before carpet cleaning by Escafeld Property Care">
+      </div>
+
+      <div class="before-after-item">
+        <span class="before-after-label">After</span>
+        <img src="after.jpg" alt="After carpet cleaning by Escafeld Property Care">
+      </div>
     </div>
   </div>
 
