@@ -46,7 +46,8 @@
     }
   ],
   "sameAs": [
-    "https://www.facebook.com/share/1FzfjXKFzM/"
+    "https://www.facebook.com/share/1FzfjXKFzM/",
+    "https://share.google/d6tLcxDqFwQDoz1ju"
   ]
 }
 </script>
@@ -482,6 +483,35 @@ header img {
   color: #d9bc74;
   font-size: 14px;
   font-weight: 700;
+}
+
+.google-review-link {
+  display: block;
+  max-width: 320px;
+  margin: 18px auto 0;
+  padding: 14px 18px;
+  text-align: center;
+  border: 1px solid #c8a95b;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #0b2e83 0%, #06184d 55%, #020b26 100%);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  box-shadow:
+    0 4px 0 #021022,
+    0 10px 20px rgba(0,0,0,0.32),
+    inset 0 1px 0 rgba(255,255,255,0.16),
+    inset 0 -1px 0 rgba(0,0,0,0.28);
+  text-shadow: 0 1px 1px rgba(0,0,0,0.45);
+}
+
+.google-review-link:active {
+  transform: translateY(2px);
+  box-shadow:
+    0 2px 0 #021022,
+    0 7px 14px rgba(0,0,0,0.28),
+    inset 0 1px 0 rgba(255,255,255,0.16),
+    inset 0 -1px 0 rgba(0,0,0,0.28);
 }
 
 .price-guide-title {
@@ -936,6 +966,12 @@ footer {
     font-size: 13px;
   }
 
+  .google-review-link {
+    max-width: 88%;
+    font-size: 15px;
+    padding: 13px 16px;
+  }
+
   .price-guide-title {
     font-size: 1.18rem;
   }
@@ -1092,6 +1128,7 @@ footer {
       <li>Regular home cleaning</li>
       <li>Deep cleaning for kitchens, bathrooms, carpets, and full-property resets</li>
       <li>End of tenancy cleaning for tenants, landlords, and property managers</li>
+      <li>Light end of tenancy property refreshes, including basic emulsion, glossing, and touch-ups where required</li>
       <li>Carpet cleaning as a standalone service or as part of end of tenancy and reset cleans</li>
       <li>Move-in and reset cleans to bring properties back to standard</li>
       <li>After-builders cleaning following renovation, repair, or contractor work</li>
@@ -1252,6 +1289,10 @@ footer {
     <span>— Thomas, Facebook Review</span>
   </div>
 
+  <a href="https://share.google/d6tLcxDqFwQDoz1ju" class="google-review-link" target="_blank" rel="noopener noreferrer">
+    Read our Google Reviews
+  </a>
+
   <p class="deep-clean-note">
     Exact tasks can vary depending on the size, condition, and requirements of the property. If there is something specific you want included, just ask when requesting your quote.
   </p>
@@ -1269,7 +1310,10 @@ footer {
       Our end of tenancy cleans are designed for properties that need more than a quick tidy. We help prepare homes for handover, new tenants, viewings, or move-in.
     </p>
     <p>
-      Guide prices start from £160, with final quotes based on property size, condition, access, carpets, appliance cleaning, and turnaround time.
+      Light property refresh work can also be added to end of tenancy jobs where required, including basic emulsion, glossing, and small paint touch-ups to help improve presentation between tenancies.
+    </p>
+    <p>
+      Guide prices start from £160, with final quotes based on property size, condition, access, carpets, appliance cleaning, refresh work, and turnaround time.
     </p>
     <p>
       Key collection, key-safe access, and completion updates can be arranged where required.
@@ -1288,7 +1332,10 @@ footer {
       One free carpet clean included with every EOT clean, extra rooms from £35.
     </p>
     <p class="price-guide-note">
-      Guide prices only. Final quote depends on property size, condition, access, additional carpets, appliance cleaning, and turnaround time.
+      Light property refresh work, including basic emulsion, glossing, and touch-ups, can be quoted separately where required.
+    </p>
+    <p class="price-guide-note">
+      Guide prices only. Final quote depends on property size, condition, access, additional carpets, appliance cleaning, refresh work, and turnaround time.
     </p>
   </div>
 
@@ -1305,14 +1352,36 @@ footer {
     </div>
 
     <div class="eot-box">
+      <h3>Light Property Refresh Add-On</h3>
+      <ul class="tick-list">
+        <li>Basic emulsion work to freshen marked or tired walls</li>
+        <li>Glossing skirting boards, frames, and woodwork where required</li>
+        <li>Small paint touch-ups after tenants have moved out</li>
+        <li>Covering light scuffs, marks, and everyday wear between tenancies</li>
+        <li>Ideal for helping rental properties look cleaner, brighter, and more presentable</li>
+        <li>Available for end of tenancy and pre-let jobs only</li>
+      </ul>
+    </div>
+
+    <div class="eot-box">
       <h3>Keys, Access & Quotes</h3>
       <ul class="tick-list">
         <li>Key collection and return can be arranged with landlords, tenants, or letting agents</li>
         <li>Key-safe access can be used where suitable</li>
         <li>Properties are locked and secured before leaving</li>
-        <li>Quotes are based on property size, condition, carpets, appliances, and deadlines</li>
+        <li>Quotes are based on property size, condition, carpets, appliances, refresh work, and deadlines</li>
         <li>Completion updates can be sent once the clean is finished</li>
         <li>Waste removal can be arranged through a trusted licensed carrier where required</li>
+      </ul>
+    </div>
+
+    <div class="eot-box">
+      <h3>Important Note</h3>
+      <ul class="tick-list">
+        <li>Our refresh work is for basic end of tenancy presentation only</li>
+        <li>We do not currently offer full decorating projects or renovation decorating</li>
+        <li>Wallpapering, plaster repairs, spraying, and specialist finishes are not included</li>
+        <li>Any refresh work will be assessed and quoted before the job is agreed</li>
       </ul>
     </div>
   </div>
@@ -1328,6 +1397,7 @@ footer {
       <li>Minimum booking: 2 hours</li>
       <li>Carpet cleaning from £35 per room. Final price depends on room size, carpet condition, access, and requirements</li>
       <li>End of tenancy guide prices are listed in the End of Tenancy section above</li>
+      <li>Light end of tenancy property refresh work can be quoted separately where required</li>
       <li>Final quote depends on property size, condition, and requirements</li>
     </ul>
   </div>
@@ -1384,6 +1454,10 @@ footer {
     <div class="feature-image">
       <img src="cleaners.png" alt="Escafeld Property Care cleaners graphic">
     </div>
+
+    <a href="https://share.google/d6tLcxDqFwQDoz1ju" class="google-review-link" target="_blank" rel="noopener noreferrer">
+      Read our Google Reviews
+    </a>
   </div>
 </section>
 
@@ -1414,6 +1488,7 @@ footer {
       <option value="Regular home cleaning">Regular home cleaning</option>
       <option value="Deep clean">Deep clean</option>
       <option value="End of tenancy clean">End of tenancy clean</option>
+      <option value="End of tenancy clean with light property refresh">End of tenancy clean with light property refresh</option>
       <option value="Carpet cleaning">Carpet cleaning</option>
       <option value="Move-in / move-out clean">Move-in / move-out clean</option>
       <option value="After-builders cleaning">After-builders cleaning</option>
