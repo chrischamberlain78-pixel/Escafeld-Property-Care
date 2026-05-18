@@ -3,17 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
 
 <title>Domestic, Carpet & End of Tenancy Cleaning in Sheffield | Escafeld Property Care</title>
-<meta name="description" content="Reliable domestic cleaning, deep cleaning, carpet cleaning, end of tenancy cleaning, and home cleaning in Sheffield and South Yorkshire. Regular home cleaning, EOT cleans, and laundry and ironing services by arrangement.">
-<meta name="keywords" content="domestic cleaning Sheffield, end of tenancy cleaning Sheffield, EOT cleaning Sheffield, carpet cleaning Sheffield, domestic cleaning South Yorkshire, home cleaning Sheffield, house cleaning Sheffield, house cleaner Sheffield, deep cleaning Sheffield, regular home cleaning, Escafeld Property Care">
+<meta name="description" content="Reliable domestic cleaning, deep cleaning, carpet cleaning, end of tenancy cleaning, carpet cleaning, and light property refresh services in Sheffield and South Yorkshire.">
+<meta name="keywords" content="domestic cleaning Sheffield, end of tenancy cleaning Sheffield, EOT cleaning Sheffield, carpet cleaning Sheffield, deep cleaning Sheffield, home cleaning Sheffield, Escafeld Property Care">
 <meta name="author" content="Escafeld Property Care">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://escafeldpropertycare.co.uk/">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Domestic & End of Tenancy Cleaning in Sheffield | Escafeld Property Care">
-<meta property="og:description" content="Reliable domestic cleaning, deep cleaning, carpet cleaning, end of tenancy cleaning, and home cleaning in Sheffield and South Yorkshire.">
+<meta property="og:description" content="Reliable domestic cleaning, deep cleaning, and end of tenancy cleaning in Sheffield and South Yorkshire.">
 <meta property="og:url" content="https://escafeldpropertycare.co.uk/">
 <meta property="og:site_name" content="Escafeld Property Care">
 <meta property="og:image" content="https://escafeldpropertycare.co.uk/logo.png">
@@ -32,7 +33,7 @@
   "url": "https://escafeldpropertycare.co.uk/",
   "image": "https://escafeldpropertycare.co.uk/logo.png",
   "logo": "https://escafeldpropertycare.co.uk/logo.png",
-  "description": "Family-run domestic cleaning, deep cleaning, carpet cleaning, end of tenancy cleaning, and home cleaning in Sheffield and South Yorkshire. Regular home cleaning, EOT cleans, and laundry and ironing services by arrangement.",
+  "description": "Family-run domestic cleaning, deep cleaning, carpet cleaning, end of tenancy cleaning, and light property refresh services in Sheffield and South Yorkshire.",
   "telephone": "+44 114 321 3137",
   "email": "info@escafeldpropertycare.co.uk",
   "areaServed": [
@@ -61,14 +62,24 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color-scheme: light only;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background: #160036;
+  background: linear-gradient(
+    180deg,
+    #160036 0%,
+    #160036 25%,
+    #10245c 65%,
+    #5fb6e8 100%
+  );
   color: #fff;
   line-height: 1.7;
   overflow-x: hidden;
+  background-attachment: fixed;
 }
 
 img {
@@ -115,7 +126,6 @@ header img {
 .menu-button {
   width: 58px;
   height: 58px;
-  margin-right: 0;
   border-radius: 16px;
   border: 1px solid #c8a95b;
   background: #06205f;
@@ -171,8 +181,7 @@ header img {
 }
 
 .dropdown-menu a {
-  padding: 10px 10px;
-  margin: 0;
+  padding: 10px;
   min-height: 48px;
   color: #ffffff;
   background: linear-gradient(180deg, #06184d 0%, #041238 55%, #020b26 100%);
@@ -195,7 +204,7 @@ header img {
 .hero {
   position: relative;
   z-index: 6;
-  padding: 40px 16px 44px;
+  padding: 40px 16px 34px;
 }
 
 .hero-box {
@@ -203,29 +212,38 @@ header img {
   margin: 0 auto;
   background: rgba(5, 18, 50, 0.9);
   border: 1px solid #c8a95b;
-  padding: 44px 24px;
+  padding: 40px 24px;
   border-radius: 20px;
   backdrop-filter: blur(6px);
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
 .hero h1 {
   font-family: Georgia, serif;
-  font-size: 34px;
-  line-height: 1.18;
-  margin-bottom: 22px;
+  font-size: 38px;
+  line-height: 1.15;
+  margin-bottom: 10px;
   color: #d9bc74;
   text-shadow:
     0 1px 0 rgba(255,255,255,0.10),
     0 2px 10px rgba(0,0,0,0.35);
 }
 
+.hero-subtitle {
+  color: #d9bc74 !important;
+  font-size: 18px !important;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  line-height: 1.55 !important;
+  margin: 0 auto 20px !important;
+}
+
 .hero p {
   color: #d8d8e6;
-  line-height: 1.95;
-  max-width: 640px;
-  margin: 0 auto 18px;
+  line-height: 1.9;
+  max-width: 650px;
+  margin: 0 auto 16px;
   font-size: 18px;
   text-align: center;
 }
@@ -239,16 +257,66 @@ header img {
   scroll-margin-top: 88px;
 }
 
-.section h2 {
-  text-align: center;
+.alt-section {
+  background: transparent;
+  border-top: 1px solid rgba(217,188,116,0.18);
+  border-bottom: 1px solid rgba(217,188,116,0.18);
+}
+
+.gold-heading {
+  display: block;
+  width: fit-content;
+  max-width: calc(100% - 32px);
   margin: 0 auto 25px;
+  padding: 12px 26px 14px;
+  text-align: center;
   font-family: Georgia, serif;
-  font-size: 2.2rem;
+  font-size: clamp(1.6rem, 6vw, 2.15rem);
+  line-height: 1.15;
+  background: linear-gradient(180deg, #07194a 0%, #041238 100%);
+  border: 2px solid #d9bc74;
+  border-radius: 18px;
+  box-shadow:
+    0 8px 18px rgba(0,0,0,0.28),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+  text-shadow: none;
+  overflow-wrap: break-word;
+  color-scheme: light only;
+  forced-color-adjust: none;
+}
+
+.gold-heading span {
+  color: #d9bc74 !important;
+  -webkit-text-fill-color: #d9bc74 !important;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.35) !important;
+}
+
+.section-break {
   max-width: 900px;
+  margin: 22px auto 6px;
+  padding: 18px 20px;
+  background: linear-gradient(180deg, #07194a 0%, #041238 100%);
   color: #d9bc74;
-  text-shadow:
-    0 1px 0 rgba(255,255,255,0.08),
-    0 2px 8px rgba(0,0,0,0.32);
+  border: 2px solid #d9bc74;
+  border-radius: 18px;
+  text-align: center;
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.22);
+}
+
+.section-break p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #d9bc74;
+}
+
+.gold-divider {
+  width: 80%;
+  max-width: 520px;
+  height: 2px;
+  margin: 26px auto;
+  background: linear-gradient(90deg, transparent, #d9bc74, transparent);
 }
 
 .card {
@@ -260,7 +328,24 @@ header img {
   border-radius: 18px;
   padding: 26px 24px;
   line-height: 1.8;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.25),
+    0 0 18px rgba(217,188,116,0.08);
+}
+
+.soft-card {
+  background: linear-gradient(180deg, #10245c 0%, #0b1a46 100%);
+  color: #ffffff;
+  border: 1px solid #d9bc74;
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.24),
+    inset 0 1px 0 rgba(255,255,255,0.08),
+    0 0 18px rgba(217,188,116,0.10);
+}
+
+.soft-card li,
+.soft-card p {
+  color: #f1f1f6;
 }
 
 .card h3 {
@@ -281,7 +366,8 @@ header img {
   margin-bottom: 0;
 }
 
-.tick-list {
+.tick-list,
+.plain-list {
   list-style: none;
   padding-left: 0;
 }
@@ -289,12 +375,14 @@ header img {
 .tick-list li {
   position: relative;
   padding-left: 34px;
-  margin-bottom: 18px;
-  line-height: 1.9;
+  margin-bottom: 15px;
+  line-height: 1.85;
   font-size: 17px;
 }
 
-.tick-list li:last-child {
+.tick-list li:last-child,
+.plain-list li:last-child,
+.bullet-list li:last-child {
   margin-bottom: 0;
 }
 
@@ -306,22 +394,13 @@ header img {
   color: #7fd35f;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.9;
-}
-
-.plain-list {
-  list-style: none;
-  padding-left: 0;
+  line-height: 1.85;
 }
 
 .plain-list li {
-  margin-bottom: 18px;
-  line-height: 1.9;
+  margin-bottom: 15px;
+  line-height: 1.85;
   font-size: 17px;
-}
-
-.plain-list li:last-child {
-  margin-bottom: 0;
 }
 
 .bullet-list {
@@ -330,22 +409,21 @@ header img {
 }
 
 .bullet-list li {
-  margin-bottom: 14px;
-  line-height: 1.9;
+  margin-bottom: 12px;
+  line-height: 1.85;
   font-size: 17px;
 }
 
-.bullet-list li:last-child {
-  margin-bottom: 0;
-}
-
-.services-intro {
+.services-intro,
+.service-section-intro,
+.deep-clean-intro,
+.eot-intro {
   max-width: 760px;
-  margin: 0 auto 18px;
+  margin: 0 auto 20px;
   text-align: center;
   color: #d8d8e6;
   font-size: 17px;
-  line-height: 1.9;
+  line-height: 1.85;
 }
 
 .feature-image {
@@ -358,17 +436,6 @@ header img {
   border-radius: 20px;
   border: 1px solid rgba(255,255,255,0.15);
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-}
-
-.service-section-intro,
-.deep-clean-intro,
-.eot-intro {
-  max-width: 760px;
-  margin: 0 auto 22px;
-  text-align: center;
-  color: #d8d8e6;
-  font-size: 17px;
-  line-height: 1.9;
 }
 
 .service-grid,
@@ -388,7 +455,7 @@ header img {
   border: 1px solid #c8a95b;
   border-radius: 18px;
   padding: 24px 22px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
 .service-box h3,
@@ -399,9 +466,6 @@ header img {
   color: #d9bc74;
   text-align: center;
   font-family: Georgia, serif;
-  text-shadow:
-    0 1px 0 rgba(255,255,255,0.06),
-    0 2px 8px rgba(0,0,0,0.28);
 }
 
 .carpet-price {
@@ -526,8 +590,8 @@ header img {
   text-align: center;
   color: #d8d8e6;
   font-size: 15px;
-  line-height: 1.85;
-  margin-top: 18px;
+  line-height: 1.8;
+  margin-top: 16px;
 }
 
 .service-note,
@@ -538,7 +602,7 @@ header img {
   text-align: center;
   color: #d8d8e6;
   font-size: 15px;
-  line-height: 1.85;
+  line-height: 1.8;
 }
 
 .eot-highlight {
@@ -547,14 +611,14 @@ header img {
   background: rgba(5, 18, 50, 0.9);
   border: 1px solid #c8a95b;
   border-radius: 20px;
-  padding: 28px 24px;
+  padding: 26px 22px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
 .eot-highlight p {
   color: #d8d8e6;
   font-size: 17px;
-  line-height: 1.9;
+  line-height: 1.85;
   text-align: center;
   margin-bottom: 14px;
 }
@@ -611,7 +675,7 @@ header img {
 .contact-form textarea {
   width: 100%;
   margin-bottom: 14px;
-  padding: 14px 14px;
+  padding: 14px;
   border-radius: 12px;
   border: 1px solid rgba(200,169,91,0.75);
   background: #ffffff;
@@ -669,18 +733,21 @@ header img {
   gap: 16px;
 }
 
-.contact-button-stack a {
+.contact-button-stack a,
+.contact-top-button a {
   display: block;
   width: 100%;
 }
 
-.contact-button-stack img {
+.contact-button-stack img,
+.contact-top-button img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.contact-button-stack .phone-link {
+.contact-button-stack .phone-link,
+.contact-top-button {
   max-width: 460px;
 }
 
@@ -689,19 +756,7 @@ header img {
 }
 
 .contact-top-button {
-  max-width: 460px;
   margin: 0 auto 22px;
-}
-
-.contact-top-button a {
-  display: block;
-  width: 100%;
-}
-
-.contact-top-button img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 .trust-wrap {
@@ -712,10 +767,6 @@ header img {
   border-radius: 20px;
   padding: 28px 22px 22px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-}
-
-.trust-wrap h2 {
-  margin-bottom: 18px;
 }
 
 .trust-wrap .card {
@@ -779,11 +830,11 @@ footer {
   }
 
   .hero h1 {
-    font-size: 30px;
+    font-size: 32px;
   }
 
-  .section h2 {
-    font-size: 2rem;
+  .hero-subtitle {
+    font-size: 16px !important;
   }
 
   .card,
@@ -847,54 +898,76 @@ footer {
 
   .dropdown-menu {
     width: min(340px, calc(100vw - 32px));
-    min-width: 0;
     right: 0;
     top: 64px;
     padding: 10px;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
-    max-height: none;
-    overflow-y: visible;
   }
 
   .dropdown-menu a {
     font-size: 12px;
     padding: 10px 8px;
-    margin: 0;
     line-height: 1.25;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 48px;
   }
 
   .hero {
-    padding: 24px 16px 38px;
+    padding: 24px 16px 30px;
   }
 
   .hero-box {
-    padding: 36px 20px;
+    padding: 34px 20px;
   }
 
   .hero h1 {
-    font-size: 27px;
-    margin-bottom: 18px;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 18px !important;
   }
 
   .hero p {
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.85;
   }
 
   .section {
-    padding: 28px 16px;
+    padding: 30px 16px;
     scroll-margin-top: 76px;
   }
 
-  .section h2 {
-    font-size: 1.8rem;
+  .gold-heading {
+    font-size: clamp(1.45rem, 8vw, 1.7rem);
+    padding: 10px 18px 12px;
+    border-radius: 16px;
     margin-bottom: 20px;
+    max-width: calc(100% - 32px);
+  }
+
+  .gold-heading span {
+    color: #d9bc74 !important;
+    -webkit-text-fill-color: #d9bc74 !important;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.35) !important;
+  }
+
+  .section-break {
+    margin: 20px auto 4px;
+    padding: 15px 16px;
+    border-radius: 16px;
+  }
+
+  .section-break p {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .gold-divider {
+    margin: 22px auto;
   }
 
   .card,
@@ -912,7 +985,7 @@ footer {
   .eot-intro,
   .eot-highlight p {
     font-size: 15px;
-    line-height: 1.85;
+    line-height: 1.8;
   }
 
   .service-box,
@@ -976,11 +1049,7 @@ footer {
     font-size: 1.18rem;
   }
 
-  .price-guide-note {
-    font-size: 14px;
-    line-height: 1.8;
-  }
-
+  .price-guide-note,
   .service-note,
   .deep-clean-note,
   .eot-note {
@@ -1084,22 +1153,18 @@ footer {
 
 <section class="hero">
   <div class="hero-box">
-    <h1>Domestic & End of Tenancy Cleaning in Sheffield & South Yorkshire</h1>
+    <h1>Professional Cleaning in Sheffield</h1>
 
-    <p>
-      Need help keeping your home clean, fresh, and under control? Escafeld Property Care provides reliable domestic cleaning, deep cleans, carpet cleaning, and end of tenancy cleaning across Sheffield and South Yorkshire.
+    <p class="hero-subtitle">
+      Domestic • Carpet • Deep Cleans • End of Tenancy
     </p>
 
     <p>
-      Whether you need regular home cleaning, a detailed reset clean, or a property prepared for handover, our focus is on quality, presentation, and respectful service from start to finish.
+      Escafeld Property Care provides reliable domestic cleaning, deep cleans, carpet cleaning, end of tenancy cleaning, and light property refresh work across Sheffield and South Yorkshire.
     </p>
 
     <p>
-      Escafeld Property Care is a family-run business, newly established but built on years of hands-on experience. The business may be new, but the standards, expectations, and work ethic behind it are not.
-    </p>
-
-    <p>
-      We understand that inviting someone into your home or property is about trust as much as cleaning, which is why every job is approached with care, consistency, and attention to detail.
+      We are a family-run business focused on clean, fresh, well-presented spaces, with care, consistency, and attention to detail on every job.
     </p>
 
     <p>
@@ -1112,25 +1177,29 @@ footer {
   </div>
 </section>
 
+<div class="section-break">
+  <p>Reliable cleaning services across Sheffield and South Yorkshire</p>
+</div>
+
 <section id="services" class="section">
   <div class="feature-image" style="margin-bottom:20px;">
     <img src="kitchen.png" alt="Modern kitchen suitable for deep cleaning services">
   </div>
 
-  <h2>Services</h2>
+  <h2 class="gold-heading"><span>Services</span></h2>
 
   <p class="services-intro">
-    Services designed around regular upkeep, deeper resets, carpet cleaning for end of tenancy work, and tailored support across Sheffield and South Yorkshire.
+    Cleaning and property care services for homes, landlords, tenants, and property managers.
   </p>
 
-  <div class="card" style="max-width:760px;">
+  <div class="card">
     <ul class="bullet-list">
       <li>Regular home cleaning</li>
       <li>Deep cleaning for kitchens, bathrooms, carpets, and full-property resets</li>
       <li>End of tenancy cleaning for tenants, landlords, and property managers</li>
       <li>Light end of tenancy property refreshes, including basic emulsion, glossing, and touch-ups where required</li>
-      <li>Carpet cleaning as a standalone service or as part of end of tenancy and reset cleans</li>
-      <li>Move-in and reset cleans to bring properties back to standard</li>
+      <li>Carpet cleaning as a standalone service or as part of larger cleaning jobs</li>
+      <li>Move-in and move-out cleans</li>
       <li>After-builders cleaning following renovation, repair, or contractor work</li>
       <li>Post-event home reset after hosting or entertaining</li>
       <li>Laundry and ironing services by arrangement</li>
@@ -1142,73 +1211,59 @@ footer {
   </div>
 </section>
 
-<section id="regular-cleans" class="section">
-  <h2>Regular Cleans</h2>
+<div class="gold-divider"></div>
+
+<section id="regular-cleans" class="section alt-section">
+  <h2 class="gold-heading"><span>Regular Cleans</span></h2>
+
   <p class="service-section-intro">
-    Our regular cleans are designed to maintain a clean, presentable home on an ongoing basis and are ideal for weekly, fortnightly, or routine visits.
+    Regular cleans are ideal for keeping your home fresh and under control on a weekly, fortnightly, or routine basis.
   </p>
 
   <div class="service-grid">
     <div class="service-box">
-      <h3>What a Regular Clean Covers</h3>
+      <h3>What We Cover</h3>
       <ul class="tick-list">
-        <li>General dusting and wiping of everyday surfaces</li>
-        <li>Kitchen worktops, visible fronts, sinks, and main touch points cleaned</li>
-        <li>Bathrooms and toilets cleaned and sanitised</li>
-        <li>Floors vacuumed and mopped where appropriate</li>
+        <li>Everyday dusting, wiping, and surface cleaning</li>
+        <li>Kitchens, bathrooms, toilets, floors, and touch points</li>
         <li>Bins emptied and finishing touches completed</li>
-        <li>A consistent standard maintained from visit to visit</li>
       </ul>
     </div>
 
     <div class="service-box">
-      <h3>Best Suited For</h3>
+      <h3>Best For</h3>
       <ul class="tick-list">
-        <li>Homes that are already in decent overall condition</li>
+        <li>Weekly or fortnightly domestic cleaning</li>
+        <li>Maintaining a clean, presentable home</li>
         <li>Clients wanting regular upkeep rather than a full reset</li>
-        <li>Weekly or fortnightly domestic cleaning visits</li>
-        <li>Maintaining presentation between busier periods</li>
-        <li>Reducing the time and effort needed to stay on top of the home</li>
       </ul>
     </div>
   </div>
-
-  <p class="service-note">
-    Regular cleans are intended for maintenance and ongoing upkeep rather than tackling heavier build-up or neglected areas.
-  </p>
 </section>
 
 <section id="deep-cleans" class="section">
-  <h2>Deep Cleans</h2>
+  <h2 class="gold-heading"><span>Deep Cleans</span></h2>
+
   <p class="deep-clean-intro">
-    Our deep cleans are designed to cover the areas people notice most, with extra attention given to build-up, detail work, carpets, and full-property presentation.
+    Deep cleans are for homes that need more attention than a regular clean, with extra focus on build-up, detail work, carpets, and presentation.
   </p>
 
   <div class="deep-clean-grid">
     <div class="deep-clean-box">
-      <h3>All Areas</h3>
+      <h3>Whole Home Detail</h3>
       <ul class="tick-list">
-        <li>High dusting to remove cobwebs and top-line build-up</li>
-        <li>Skirting boards, frames, handles, switches, and high-traffic touch points cleaned</li>
-        <li>General surfaces dusted and wiped throughout</li>
-        <li>Furniture fronts, visible marks, and presentation areas refreshed</li>
-        <li>Internal window glass cleaned where required</li>
-        <li>Hard floors vacuumed and mopped where appropriate</li>
-        <li>Bins emptied, cleaned, and rubbish removed</li>
+        <li>High dusting, cobweb removal, skirting boards, frames, handles, and switches</li>
+        <li>Surfaces, furniture fronts, internal glass where required, and hard floors</li>
+        <li>Touch points, edges, corners, bins, and general presentation areas</li>
       </ul>
     </div>
 
     <div class="deep-clean-box">
       <h3>Kitchen & Utility</h3>
       <ul class="tick-list">
-        <li>Worktops, cupboard fronts, and external appliance surfaces cleaned and degreased</li>
-        <li>Sinks, taps, plug areas, and surrounding surfaces cleaned and polished</li>
-        <li>Microwave cleaned inside and out</li>
-        <li>Inside oven cleaned where requested</li>
-        <li>Inside fridge cleaned where requested</li>
-        <li>Visible marks, splashback areas, and everyday build-up removed</li>
-        <li>Skirting, edges, and accessible corners detailed</li>
-        <li>Floors thoroughly vacuumed and mopped</li>
+        <li>Worktops, cupboard fronts, sinks, taps, splashbacks, and appliance fronts</li>
+        <li>Microwave, oven, and fridge cleaned where requested</li>
+        <li>Degreasing, visible build-up removal, and floor cleaning</li>
       </ul>
     </div>
 
@@ -1218,12 +1273,9 @@ footer {
       </div>
       <h3>Bathrooms & Toilets</h3>
       <ul class="tick-list">
-        <li>Toilets cleaned, disinfected, and descaled where needed</li>
-        <li>Sinks, baths, showers, taps, and fittings cleaned and polished</li>
-        <li>Soap residue, water marks, and general bathroom build-up tackled</li>
-        <li>Mirrors, visible tile areas, and bathroom touch points cleaned</li>
-        <li>Shower screens, surrounds, and accessible tracks detailed</li>
-        <li>Floors vacuumed and mopped, with bins emptied and disinfected</li>
+        <li>Toilets, sinks, baths, showers, taps, mirrors, and fittings cleaned</li>
+        <li>Soap residue, water marks, descaling, and bathroom build-up tackled</li>
+        <li>Floors cleaned, bins emptied, and touch points sanitised</li>
       </ul>
     </div>
 
@@ -1234,12 +1286,9 @@ footer {
       <h3>Carpet Cleaning</h3>
       <p class="carpet-price">FROM £35 PER ROOM</p>
       <ul class="tick-list">
-        <li>Professional carpet cleaning available as a standalone service or as part of larger cleaning jobs</li>
         <li>Suitable for bedrooms, lounges, hallways, stairs, and high-traffic areas</li>
-        <li>Pre-spray treatment to help break down dirt, marks, and traffic lane build-up</li>
-        <li>Agitation to work the cleaning solution into the carpet fibres</li>
-        <li>Extraction cleaning to remove suspended soil, moisture, and residue</li>
-        <li>Extra drying passes carried out to help reduce drying time where possible</li>
+        <li>Pre-spray, agitation, extraction cleaning, and extra drying passes where possible</li>
+        <li>Available alone or with domestic, deep clean, and end of tenancy bookings</li>
       </ul>
     </div>
   </div>
@@ -1294,29 +1343,32 @@ footer {
   </a>
 
   <p class="deep-clean-note">
-    Exact tasks can vary depending on the size, condition, and requirements of the property. If there is something specific you want included, just ask when requesting your quote.
+    Exact tasks can vary depending on property size, condition, and requirements. If there is something specific you want included, just ask when requesting your quote.
   </p>
 </section>
 
-<section id="eot-cleans" class="section">
-  <h2>End of Tenancy Cleans</h2>
+<div class="section-break">
+  <p>End of tenancy packages include one free carpet clean</p>
+</div>
+
+<section id="eot-cleans" class="section alt-section">
+  <h2 class="gold-heading"><span>End of Tenancy Cleans</span></h2>
 
   <p class="eot-intro">
-    Detailed end of tenancy cleaning for tenants, landlords, and property managers who need a property brought back to a clean, presentable standard.
+    End of tenancy cleaning for tenants, landlords, and property managers who need a property cleaned, refreshed, and ready for handover, viewings, or new occupants.
   </p>
 
   <div class="eot-highlight">
     <p>
-      Our end of tenancy cleans are designed for properties that need more than a quick tidy. We help prepare homes for handover, new tenants, viewings, or move-in.
+      Guide prices start from £160, with quotes based on property size, condition, carpets, appliance cleaning, access, and turnaround time.
     </p>
+
     <p>
-      Light property refresh work can also be added to end of tenancy jobs where required, including basic emulsion, glossing, and small paint touch-ups to help improve presentation between tenancies.
+      One free carpet clean is included with every end of tenancy clean. Extra carpeted rooms start from £35.
     </p>
+
     <p>
-      Guide prices start from £160, with final quotes based on property size, condition, access, carpets, appliance cleaning, refresh work, and turnaround time.
-    </p>
-    <p>
-      Key collection, key-safe access, and completion updates can be arranged where required.
+      Our end of tenancy service helps simplify the handover by bringing cleaning, carpet care, light property refresh work, access arrangements, secure lock-up, and completion updates together in one place.
     </p>
   </div>
 
@@ -1328,12 +1380,6 @@ footer {
       <li>3-bedroom property — from £280</li>
       <li>4+ bedroom property — from £340</li>
     </ul>
-    <p class="price-guide-note">
-      One free carpet clean included with every EOT clean, extra rooms from £35.
-    </p>
-    <p class="price-guide-note">
-      Light property refresh work, including basic emulsion, glossing, and touch-ups, can be quoted separately where required.
-    </p>
     <p class="price-guide-note">
       Guide prices only. Final quote depends on property size, condition, access, additional carpets, appliance cleaning, refresh work, and turnaround time.
     </p>
@@ -1347,29 +1393,22 @@ footer {
         <li>Landlords preparing for new tenants</li>
         <li>Rental properties needing a full reset</li>
         <li>Move-in and move-out cleans</li>
-        <li>Properties left with rubbish or unwanted items</li>
       </ul>
     </div>
 
     <div class="eot-box">
-      <h3>Light Property Refresh Add-On</h3>
+      <h3>Light Property Refresh</h3>
       <ul class="tick-list">
-        <li>Basic emulsion work to freshen marked or tired walls</li>
-        <li>Glossing skirting boards, frames, and woodwork where required</li>
-        <li>Small paint touch-ups after tenants have moved out</li>
-        <li>Covering light scuffs, marks, and everyday wear between tenancies</li>
-        <li>Ideal for helping rental properties look cleaner, brighter, and more presentable</li>
-        <li>Available for end of tenancy and pre-let jobs only</li>
+        <li>Basic emulsion, glossing, and small paint touch-ups where required</li>
+        <li>Ideal for light scuffs, tired walls, and end of tenancy presentation</li>
+        <li>Quoted separately after the property has been assessed</li>
       </ul>
     </div>
 
     <div class="eot-box">
-      <h3>Keys, Access & Quotes</h3>
+      <h3>Access & Updates</h3>
       <ul class="tick-list">
-        <li>Key collection and return can be arranged with landlords, tenants, or letting agents</li>
-        <li>Key-safe access can be used where suitable</li>
-        <li>Properties are locked and secured before leaving</li>
-        <li>Quotes are based on property size, condition, carpets, appliances, refresh work, and deadlines</li>
+        <li>Key collection, key-safe access, and secure lock-up available</li>
         <li>Completion updates can be sent once the clean is finished</li>
         <li>Waste removal can be arranged through a trusted licensed carrier where required</li>
       </ul>
@@ -1378,64 +1417,58 @@ footer {
     <div class="eot-box">
       <h3>Important Note</h3>
       <ul class="tick-list">
-        <li>Our refresh work is for basic end of tenancy presentation only</li>
-        <li>We do not currently offer full decorating projects or renovation decorating</li>
-        <li>Wallpapering, plaster repairs, spraying, and specialist finishes are not included</li>
-        <li>Any refresh work will be assessed and quoted before the job is agreed</li>
+        <li>Refresh work is for basic end of tenancy presentation only</li>
+        <li>We do not currently offer full decorating projects, wallpapering, plaster repairs, spraying, or specialist finishes</li>
       </ul>
     </div>
   </div>
 </section>
 
 <section id="pricing" class="section">
-  <h2>Pricing</h2>
+  <h2 class="gold-heading"><span>Pricing</span></h2>
 
-  <div class="card">
+  <div class="card soft-card">
     <ul class="tick-list">
       <li>Regular cleans from £50 per hour — team of 2 cleaners</li>
-      <li>Deep cleans charged at the same hourly rate, but usually require longer bookings or a fixed quote based on condition</li>
+      <li>Deep cleans charged at the same hourly rate, or quoted as a fixed job depending on condition</li>
       <li>Minimum booking: 2 hours</li>
-      <li>Carpet cleaning from £35 per room. Final price depends on room size, carpet condition, access, and requirements</li>
-      <li>End of tenancy guide prices are listed in the End of Tenancy section above</li>
-      <li>Light end of tenancy property refresh work can be quoted separately where required</li>
-      <li>Final quote depends on property size, condition, and requirements</li>
+      <li>Carpet cleaning from £35 per room</li>
+      <li>End of tenancy guide prices listed above</li>
+      <li>Light property refresh work quoted separately where required</li>
     </ul>
   </div>
 </section>
 
-<section id="process" class="section">
-  <h2>How It Works</h2>
+<section id="process" class="section alt-section">
+  <h2 class="gold-heading"><span>How It Works</span></h2>
 
-  <div class="card" style="max-width:700px;">
+  <div class="card soft-card">
     <ul class="plain-list">
-      <li>Get in touch via email, phone, or message with what you need</li>
-      <li>Receive a clear, no-obligation quote based on your requirements</li>
-      <li>Visits can be arranged as one-off, weekly, or fortnightly where suitable</li>
-      <li>The work is completed to a high standard with attention to detail throughout</li>
-      <li>Add-on tasks can be discussed and arranged where required</li>
+      <li>Get in touch by phone, email, Facebook, or the enquiry form</li>
+      <li>Tell us what you need, including property size, condition, and preferred dates</li>
+      <li>Receive a clear, no-obligation quote</li>
+      <li>We complete the work with care, attention to detail, and clear communication</li>
     </ul>
   </div>
 </section>
+
+<div class="gold-divider"></div>
 
 <section id="trust" class="section">
   <div class="trust-wrap">
-    <h2>Trust & Reassurance</h2>
+    <h2 class="gold-heading"><span>Trust & Reassurance</span></h2>
 
     <div class="card">
       <p>
-        We understand that inviting someone into your home — or the home of a loved one — is about trust as much as cleaning.
+        We understand that inviting someone into your home or property is about trust as much as cleaning.
       </p>
 
       <p>
-        Members of our team have experience working with vulnerable adults and individuals with additional needs, including those in residential care environments. This means we approach every job with patience, respect, and an understanding of how important it is to create a calm, safe, and comfortable experience.
+        Our team has experience working with vulnerable adults and individuals with additional needs, including residential care environments. We approach every job with patience, respect, and professionalism.
       </p>
 
       <p>
-        Our team members hold Basic DBS certificates where applicable. Certificates can be shown to clients on request. Escafeld Property Care is fully insured with £1,000,000 public liability cover, with proof of insurance available on request.
-      </p>
-
-      <p>
-        Whether we are working in a family home or supporting a vulnerable client, our focus is always the same — professional standards delivered with care and consideration.
+        Escafeld Property Care is fully insured with £1,000,000 public liability cover. Basic DBS certificates and proof of insurance can be shown on request where applicable.
       </p>
     </div>
 
@@ -1443,9 +1476,8 @@ footer {
       <ul class="tick-list">
         <li>Experienced professionals</li>
         <li>Consistent, high-standard results</li>
-        <li>Discreet, respectful service in your home</li>
-        <li>Detail-focused approach to every clean</li>
-        <li>Fully insured with £1,000,000 public liability cover. Proof of insurance available on request.</li>
+        <li>Discreet and respectful service</li>
+        <li>Fully insured with £1,000,000 public liability cover</li>
         <li>Basic DBS certificates available to view on request where applicable</li>
         <li>Risk assessments available where required</li>
       </ul>
@@ -1461,8 +1493,8 @@ footer {
   </div>
 </section>
 
-<section id="contact" class="section">
-  <h2 style="margin-bottom:14px;">Contact</h2>
+<section id="contact" class="section alt-section">
+  <h2 class="gold-heading" style="margin-bottom:14px;"><span>Contact</span></h2>
 
   <div class="contact-top-button">
     <a href="tel:01143213137" class="phone-link" title="Call 0114 321 3137">
